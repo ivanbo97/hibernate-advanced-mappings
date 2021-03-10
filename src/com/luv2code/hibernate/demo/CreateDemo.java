@@ -27,23 +27,12 @@ public class CreateDemo {
 					
 					// create the objects 
 					
-				/*	Instructor tempInstructor = new Instructor("Chad","Darby","darby@luv2code.com");
+					Instructor tempInstructor = new Instructor("Chad","Darby","darby@luv2code.com");
 					
 					InstructorDetail tempInstructorDetail = 
 							new InstructorDetail(
 									"http://luv2code.com/youtube",
 									"Luv 2 code!!!");
-					
-					// associate the objects
-					tempInstructor.setInstructorDetail(tempInstructorDetail);*/
-					
-					
-					Instructor tempInstructor = new Instructor("Ivan","Ivanov","iivanov@luv2code.com");
-					
-					InstructorDetail tempInstructorDetail = 
-							new InstructorDetail(
-									"http://yeah.com/youtube",
-									"Coding coding coding!!!");
 					
 					// associate the objects
 					tempInstructor.setInstructorDetail(tempInstructorDetail);
