@@ -33,14 +33,20 @@ public class GetInstructorDetailDemo {
 					System.out.println("Retrieved row: " + instructorDetail);
 					
 					// print the associated instructor
-					Instructor instructor = instructorDetail.getInstructor();
-					System.out.println("Associated instructor: " + instructor);
-					
+					if(instructorDetail != null) {
+						Instructor instructor = instructorDetail.getInstructor();
+						System.out.println("Associated instructor: " + instructor);
+					} else {
+						System.out.println("Instructor detail with id=" + instrDetailId + " does not exist.");
+					}
 					// commit transaction
 					session.getTransaction().commit();
 					System.out.println("Done!");
 					
+				} catch (Exception e) {
+					e.printStackTrace();
 				} finally {
+					factory.close();
 					session.close();
 				}
 	}
