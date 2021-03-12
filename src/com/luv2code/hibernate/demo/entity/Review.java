@@ -16,7 +16,7 @@ public class Review {
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="commnet")
+	@Column(name="comment")
 	private String comment;
 	
 	public Review() {
